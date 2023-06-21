@@ -3,7 +3,8 @@
 
 push(){
     git add .
-    git commit -am "update"
+    read -p "Enter commit message: " message
+    git commit -am "message"
     git push 
 }
 
