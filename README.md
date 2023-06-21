@@ -1,6 +1,6 @@
 # prepAcademy
 proof of concept apis(endpoints) and backend for prepAcademy
-RESET on flask 
+REST on flask 
 
 # DOCUMENTATION (Alpha version 0.0.1)
 
@@ -12,9 +12,21 @@ RESET on flask
 - ```payment_type```
 - ```payment_currency```
 
+
+
+
 #### TODO: 
 - either implement a 3rd party payment gateway or implement a dummy payment gateway.
-
+- move database to a cloud service like mongoDB for scalability.
+- implement a user authentication system.
+- implement a user registration system.
+- implement a user login system.
+- implement a user logout system.
+- implement a user profile system.
+- implement a user payment system.
+- implement a user payment history system.
+- implement a user payment status system.
+- implement a user payment type system.
 
 
 
