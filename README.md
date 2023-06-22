@@ -42,10 +42,10 @@ response dictionary:
 
 
 #### TODO Backend: 
+- implement a user registration system (complete).
 - either implement a 3rd party payment gateway or implement a dummy payment gateway.
 - move database to a cloud service like mongoDB for scalability.
 - implement a user authentication system.
-- implement a user registration system.
 - implement a user login system.
 - implement a user logout system.
 - implement a user profile system.
