@@ -12,10 +12,12 @@ REST on flask
 - ```payment_type```
 - ```payment_currency```
 
+-- ```findAccount``` checks if the user exists in the database. In the future, this will be replaced by an actual database; not file storage.
 
 
 
-#### TODO: 
+
+#### TODO Backend: 
 - either implement a 3rd party payment gateway or implement a dummy payment gateway.
 - move database to a cloud service like mongoDB for scalability.
 - implement a user authentication system.
@@ -29,4 +31,6 @@ REST on flask
 - implement a user payment type system.
 
 
+#### TODO Frontend: 
+- javascript(react.js) frontend.
 
