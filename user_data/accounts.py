@@ -16,6 +16,7 @@ class academyAccount:
             - account_number
             
         """
+        print(record_find)
         if record_find['date_of_birth']:
             # make sure its a valid date
             if len(record_find['date_of_birth']) != 10:
@@ -23,8 +24,6 @@ class academyAccount:
         valid_email = re.search(r"[^@]+@[^@]+\.[^@]+", record_find['email'])
         if not valid_email:
             return "Invalid email address"
-        
-        
             
         regex_record = record_find['date_of_birth'].replace("-","_")
         regex_email = record_find['email'].replace("@","_")
@@ -34,8 +33,11 @@ class academyAccount:
                 with open(f"masterdb/{account}/account{regex_email}.json", "r") as account_file:
                     account_data = json.load(account_file)
                     for email_address in account_data:
-                        if account_data[email_address]["email"] == record_find['email']:
-                            return account_data[email_address]
+                        try:
+                            if account_data[email_address]["email_address"] == record_find['email_address']:
+                                return account_data[email_address]
+                        except Exception as e:
+                            return "requested parameter not found"
         #create a new account
         # make directory based on date of birth and add account.json
         print(f"Account not found in masterdb for {regex_record}")       
@@ -58,12 +60,15 @@ class academyAccount:
         """Create a new account if the user does not have one
         """
         # print("requested_info",client_request)
-        if client_request["date_of_birth"] == "":
-            return "Date of birth is required"
-        
-        if client_request["email_address"] == "":
-            return "Email address is required"
-        
+        try:
+                
+            if client_request["date_of_birth"] == "":
+                return "Date of birth is required"
+            
+            if client_request["email_address"] == "":
+                return "Email address is required"
+        except Exception as e:
+            return "Missing required parameters (this is a curtousy message)"
         client_dict = {
             "account_number": "",
             "created_at": "",
@@ -87,9 +92,7 @@ class academyAccount:
 
         }
         
-        
         client_account = academyAccount.findAccount(client_dict)
-        
         return client_account
 
 
