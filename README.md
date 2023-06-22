@@ -12,7 +12,31 @@ REST on flask
 - ```payment_type```
 - ```payment_currency```
 
--- ```findAccount``` checks if the user exists in the database. In the future, this will be replaced by an actual database; not file storage.
+1. ```findAccount``` checks if the user exists in the database. In the future, this will be replaced by an actual database; not file storage.
+response dictionary:
+```bash
+"account_number": "",
+"created_at": "",
+"last_login": "",
+"username": "",
+"password": "",
+"email": "",
+"date_of_birth": "",
+"first_name": "",
+"last_name": "",
+"address": "",
+"city": "",
+"state": "",
+"zip_code": "",
+"country": "",
+"phone_number": "",
+"account_type": "",
+"account_status": "",
+"account_balance": "",
+```
+
+
+
 
 
 

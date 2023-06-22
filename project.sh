@@ -15,5 +15,11 @@ flask_run(){
     flask run 
 }
 
+kill_server(){
+    # lsof -P | grep ":$process_to_kill" | awk '{print $2}' | xargs kill -9
+
+    kill -9 $(lsof -t -i:5000)
+}
+
 "${@:1}" "${@:3}"
 

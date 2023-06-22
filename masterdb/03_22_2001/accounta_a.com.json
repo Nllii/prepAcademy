@@ -1,0 +1,20 @@
+{
+    "account_number": "",
+    "created_at": "",
+    "last_login": "",
+    "username": "",
+    "password": "",
+    "email": "a@a.com",
+    "date_of_birth": "03-22-2001",
+    "first_name": "",
+    "last_name": "",
+    "address": "",
+    "city": "",
+    "state": "",
+    "zip_code": "",
+    "country": "",
+    "phone_number": "",
+    "account_type": "",
+    "account_status": "",
+    "account_balance": ""
+}

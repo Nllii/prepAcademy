@@ -11,8 +11,9 @@ server_status(){
 
 }
 find_account(){
-    
-    curl -X POST -H "Content-Type: application/json" -d '{"username":"testa","email":"test"}' $server_endpoint/account/1234
+    curl -X POST -H "Content-Type: application/json" -d '{"email_address":"a@a.com","date_of_birth":"03-22-2001"}' $server_endpoint/account
+
+
 
 
 }
