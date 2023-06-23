@@ -34,7 +34,7 @@ class academyAccount:
                     account_data = json.load(account_file)
                     for email_address in account_data:
                         try:
-                            if account_data[email_address]["email_address"] == record_find['email_address']:
+                            if account_data[email_address]["email"] == record_find['email']:
                                 return account_data[email_address]
                         except Exception as e:
                             return "requested parameter not found"
@@ -52,9 +52,6 @@ class academyAccount:
             return record_find
         
         
-
-        
-
     @staticmethod
     def Useraccount(client_request):
         """Create a new account if the user does not have one
@@ -65,34 +62,36 @@ class academyAccount:
             if client_request["date_of_birth"] == "":
                 return "Date of birth is required"
             
-            if client_request["email_address"] == "":
+            if client_request["email"] == "":
                 return "Email address is required"
         except Exception as e:
+            print(e)
             return "Missing required parameters (this is a curtousy message)"
-        client_dict = {
-            "account_number": "",
-            "created_at": "",
-            "last_login": "",
-            "username": "",
-            "password": "",
-            "email": client_request["email_address"],
-            "date_of_birth": client_request["date_of_birth"],
-            "first_name": "",
-            "last_name": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "zip_code": "",
-            "country": "",
-            "phone_number": "",
-            "account_type": "",
-            "account_status": "",
-            "account_balance": "",
+        # client_dict = {
+        #     "account_number": "",
+        #     "created_at": "",
+        #     "last_login": "",
+        #     "username": "",
+        #     "password": "",
+        #     "email": client_request["email_address"],
+        #     "date_of_birth": client_request["date_of_birth"],
+        #     "first_name": "",
+        #     "last_name": "",
+        #     "address": "",
+        #     "city": "",
+        #     "state": "",
+        #     "zip_code": "",
+        #     "country": "",
+        #     "phone_number": "",
+        #     "account_type": "",
+        #     "account_status": "",
+        #     "account_balance": "",
+        #     "amount": "",
 
 
-        }
+        # }
         
-        client_account = academyAccount.findAccount(client_dict)
+        client_account = academyAccount.findAccount(client_request)
         return client_account
 
 

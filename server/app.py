@@ -8,14 +8,8 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 from user_data import accounts
-
-
-
-
-
-app = Flask(__name__)
 user_database = accounts.academyAccount()
-
+app = Flask(__name__)
 @app.route("/status")
 def status():
     return "server is running"
@@ -25,14 +19,16 @@ def status():
 # @app.route('/account/<user_id>', methods = ['GET', 'POST', 'DELETE'])
 @app.route('/account', methods = ['GET', 'POST', 'DELETE'])
 def userAccount():
-    # Customer Name
-    # username
-    # Email
-    # Account Number (if available)
-    # returns a 201 code to indicate that the account was created successfully
+    """
+    This function is responsible for creating and managing user accounts
+
+    Returns:
+        str: json response, 201 if successful, 400 if not
+    """
     
     if request.method == 'POST':
         data = request.get_json()
+        print(data)
         account_info = user_database.Useraccount(data)
         response = {
             "response": account_info
@@ -42,4 +38,21 @@ def userAccount():
 
     
 
+@app.route('/account/transactions', methods = ['GET', 'POST', 'DELETE'])
+def generated_revenue():
+    # populate the frontend with reqired data.
+    if request.method == 'GET':
+        data = request.get_json()
+        print(data)
+        account_info = user_database.Useraccount(data)
+        response = {
+            "response": account_info
+        }
+        return jsonify(account_info), 201
+    return "<h3>...server is running</h3>"
 
+    
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
