@@ -1,4 +1,10 @@
-# prepAcademy (client does not have the funding required for implementation of concept, project has been halted). 
+# prepAcademy 
+
+# [project suspended] DO NOT USE:
+
+### REASON: client does not have the funding required for such an implementation of concept, a legtimate business standing to sign up for required APIs for intergations ). 
+
+
 
 proof of concept apis(endpoints) and backend for prepAcademy
 REST on flask 
