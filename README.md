@@ -10,7 +10,8 @@
 5. Client does not have the funding required for such an implementation of concept.
 
 
-
+[showcase demo frontend]
+![screenshot](https://github.com/Nllii/prepAcademy/blob/702a49b1956c2dcb87ac65bbba4279fab49a82c5/masterdb/demo.jpeg=250x250)
 
 proof of concept apis(endpoints) and backend for prepAcademy
 REST on flask 
