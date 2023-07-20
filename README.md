@@ -2,7 +2,13 @@
 
 # [project suspended] DO NOT USE:
 
-### REASON: client does not have the funding required for such an implementation of concept and a legtimate business standing to sign up for required APIs for intergations ). 
+### REASON: 
+1. Client does not have a legitimate business standing to sign up for required APIs for intergations
+2. Client hintted on a scrupulous bussiness practice (vapourware concept )
+3. Client can't provide a basic prosopal
+4. Client is not coherent to understand basic concepts
+5. Client does not have the funding required for such an implementation of concept.
+
 
 
 
