@@ -3,15 +3,20 @@
 # [project suspended] DO NOT USE:
 
 ### REASON: 
+
 1. Client does not have a legitimate business standing to sign up for required APIs for intergations
 2. Client hintted on a scrupulous bussiness practice (vapourware concept )
 3. Client can't provide a basic prosopal
-4. Client is not coherent to understand basic concepts
+4. Client is not coherent enough to understand basic concepts
 5. Client does not have the funding required for such an implementation of concept.
+6. Client is not willing to pay for the services required to implement the concept.
+7. Client is not willing to sign a contract for the services required to implement the concept.
 
 
-[showcase demo frontend]
-<img src="https://github.com/Nllii/prepAcademy/blob/702a49b1956c2dcb87ac65bbba4279fab49a82c5/masterdb/demo.jpeg" width="100" height="100">
+
+## [showcase demo frontend]
+
+<img src="https://github.com/Nllii/prepAcademy/blob/702a49b1956c2dcb87ac65bbba4279fab49a82c5/masterdb/demo.jpeg" width="800" height="800">
 
 <!-- ![screenshot](https://github.com/Nllii/prepAcademy/blob/702a49b1956c2dcb87ac65bbba4279fab49a82c5/masterdb/demo.jpeg=250x250) -->
 
