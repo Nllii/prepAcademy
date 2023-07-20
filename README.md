@@ -14,7 +14,7 @@
 
 ## [showcase demo frontend]
 
-<img src="https://github.com/Nllii/prepAcademy/blob/702a49b1956c2dcb87ac65bbba4279fab49a82c5/masterdb/demo.jpeg" width="400" height="400">
+<img src="https://github.com/Nllii/prepAcademy/blob/702a49b1956c2dcb87ac65bbba4279fab49a82c5/masterdb/demo.jpeg" width="810" height="800">
 
 <!-- ![screenshot](https://github.com/Nllii/prepAcademy/blob/702a49b1956c2dcb87ac65bbba4279fab49a82c5/masterdb/demo.jpeg=250x250) -->
 
