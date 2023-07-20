@@ -14,6 +14,7 @@
 
 ## [showcase demo frontend]
 ![screenshot](masterdb/IMG_0015.PNG)
+![screenshot](masterdb/IMG_0016.PNG)
 
 proof of concept apis(endpoints) and backend for prepAcademy
 REST on flask 
