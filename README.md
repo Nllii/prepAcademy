@@ -13,7 +13,7 @@
 
 
 ## [showcase demo frontend]
-![screenshot](https://github.com/Nllii/prepAcademy/blob/6ff5a9647dc5368849ae6c758cc3a4ca2b80a2fb/masterdb/demo-1.jpeg)
+![screenshot](masterdb/IMG_0015.PNG)
 
 proof of concept apis(endpoints) and backend for prepAcademy
 REST on flask 
