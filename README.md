@@ -1,4 +1,5 @@
-# prepAcademy
+# prepAcademy (client does not have the funding required for implementation of concept, project has been halted). 
+
 proof of concept apis(endpoints) and backend for prepAcademy
 REST on flask 
 
